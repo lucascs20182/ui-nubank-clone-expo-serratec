@@ -6,7 +6,7 @@ import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 
 // import Home from './src/components/Home';
 
-export default function App() {
+export default function HomeLogada() {
   return (
     <View style={styles.container}>
         <View style={styles.row}>

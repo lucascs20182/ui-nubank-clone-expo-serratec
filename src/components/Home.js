@@ -3,7 +3,7 @@ import { StyleSheet, Text, ImageBackground, Image, View, TouchableOpacity} from 
 
 import { AntDesign } from '@expo/vector-icons';
 
-export default function Home() {
+export default function Home({ navigation }) {
   return (
     <View style={styles.containerBackground}>
       <ImageBackground style={styles.background}
@@ -25,10 +25,11 @@ export default function Home() {
             <Text style={styles.textoBotaoLogin}>COMEÇAR</Text>
         </TouchableOpacity>
 
-        <View style={styles.containerBotaoEntrar}>
-          <Text style={styles.botaoEntrar}>Entrar na minha conta</Text>
-          <AntDesign style={styles.setaEntrar} name="right" size={6} color="white" />
-        </View>
+        <TouchableOpacity style={styles.containerBotaoEntrar}
+          onPress={() => navigation.navigate('HomeLogada')}>
+            <Text style={styles.botaoEntrar}>Entrar na minha conta</Text>
+            <AntDesign style={styles.setaEntrar} name="right" size={6} color="white" />
+        </TouchableOpacity>
       </View>
     </View>
   );
