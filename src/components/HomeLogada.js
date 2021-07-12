@@ -23,11 +23,15 @@ export default function App() {
             </View>            
         </View>
         <View style={styles.containerContas}>
-
+            <MaterialIcons name="person-add" size={24} color="black" />
+            <Text style={styles.textoConta}>Fatura atual</Text>
+            <View style={styles.censurado1}></View>  
         </View>
 
         <View style={styles.containerContas}>
-
+            <MaterialIcons name="person-add" size={24} color="black" />
+            <Text style={styles.textoConta}>Saldo disponível</Text>
+            <View style={styles.censurado2}></View>  
         </View>
 
         <View style={styles.containerFooter}>
@@ -110,9 +114,12 @@ const styles = StyleSheet.create({
 
     containerContas: {
         width: 329,
-        height: 145,
+        height: 165,
         backgroundColor: '#FFFFFF',
-        borderRadius: 4
+        borderRadius: 4,
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        paddingLeft: 25
     },
 
     containerFooter: {
@@ -137,5 +144,31 @@ const styles = StyleSheet.create({
     itemFooterText: {
         fontSize: 13,
         color: '#fff'
+    },
+
+    censurado1: {
+        backgroundColor: '#F2F2F2',
+        width: 282,
+        height: 49,
+        // alignSelf: 'center'
+    },
+
+    censurado2: {
+        backgroundColor: '#F2F2F2',
+        width: 282,
+        height: 29,
+        // alignSelf: 'center'
+    },
+
+    textoConta: {
+        width: 150,
+        height: 17,
+        fontStyle: 'normal',
+        fontWeight: 300,
+        fontSize: 14,
+        lineHeight: 17,
+        letterSpacing: 1,
+        color: '#4E4E4E',
+        marginVertical: 15
     }
 });
