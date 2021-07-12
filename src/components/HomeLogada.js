@@ -23,13 +23,20 @@ export default function App() {
             </View>            
         </View>
         <View style={styles.containerContas}>
-            <MaterialIcons name="person-add" size={24} color="black" />
+            <View style={styles.tituloContas}>
+                <MaterialIcons name="person-add" size={24} color="black" />
+                <Text style={styles.textoConta2}>Cartão de Crédito</Text>
+            </View>
+
             <Text style={styles.textoConta}>Fatura atual</Text>
             <View style={styles.censurado1}></View>  
         </View>
 
         <View style={styles.containerContas}>
-            <MaterialIcons name="person-add" size={24} color="black" />
+            <View style={styles.tituloContas}>
+                <MaterialIcons name="person-add" size={24} color="black" />
+                <Text style={styles.textoConta2}>Conta</Text>
+            </View>
             <Text style={styles.textoConta}>Saldo disponível</Text>
             <View style={styles.censurado2}></View>  
         </View>
@@ -164,11 +171,26 @@ const styles = StyleSheet.create({
         width: 150,
         height: 17,
         fontStyle: 'normal',
-        fontWeight: 300,
+        fontWeight: '300',
         fontSize: 14,
         lineHeight: 17,
         letterSpacing: 1,
         color: '#4E4E4E',
         marginVertical: 15
+    },
+
+    textoConta2: {
+        // height: 17,
+        // fontStyle: 'normal',
+        fontWeight: '500',
+        fontSize: 16,
+        lineHeight: 17,
+        letterSpacing: .5,
+        color: '#4E4E4E',
+        marginLeft: 15
+    },
+
+    tituloContas: {
+        flexDirection: 'row'
     }
 });
