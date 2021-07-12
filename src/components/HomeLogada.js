@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
 
     containerContas: {
         width: 329,
-        height: 165,
+        height: 155,
         backgroundColor: '#FFFFFF',
         borderRadius: 4,
         justifyContent: 'center',
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
         lineHeight: 17,
         letterSpacing: 1,
-        color: '#4E4E4E',
+        color: 'rgba(0, 0, 0, .6)',
         marginVertical: 15
     },
 
@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 17,
         letterSpacing: .5,
-        color: '#4E4E4E',
+        color: 'rgba(0, 0, 0, .6)',
         marginLeft: 15
     },
 
