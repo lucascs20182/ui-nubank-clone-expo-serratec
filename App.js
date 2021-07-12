@@ -8,8 +8,9 @@ import { StatusBar } from 'react-native';
 export default function App() {
   return (
     <>
-      <StatusBar barStyle="light-content" hidden />
-      <HomeLogada />
+      <StatusBar backgroundColor="rgba(255, 255, 255, 0)" translucent />
+      <Home />
+      {/* <HomeLogada /> */}
     </>
   );
 }
