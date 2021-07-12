@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyleSheet, View, Text, TouchableOpacity, ScrollView} from 'react-native';
+import { StyleSheet, View, Image, Text, TouchableOpacity, ScrollView} from 'react-native';
 
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 
@@ -24,7 +24,7 @@ export default function App() {
         </View>
         <View style={styles.containerContas}>
             <View style={styles.tituloContas}>
-                <MaterialIcons name="person-add" size={24} color="black" />
+                <Image source={require('../images/icone-cartao.png')} />
                 <Text style={styles.textoConta2}>Cartão de Crédito</Text>
             </View>
 
@@ -34,7 +34,7 @@ export default function App() {
 
         <View style={styles.containerContas}>
             <View style={styles.tituloContas}>
-                <MaterialIcons name="person-add" size={24} color="black" />
+                <Image source={require('../images/icone-moedinhas.png')} />
                 <Text style={styles.textoConta2}>Conta</Text>
             </View>
             <Text style={styles.textoConta}>Saldo disponível</Text>
@@ -45,28 +45,23 @@ export default function App() {
             <ScrollView contentContainerStyle={styles.tabContainer} 
                 horizontal showsHorizontalScrollIndicator={false}>
                     <View style={styles.tabItem}>
-                        <MaterialIcons name="person-add" size={24} color="#fff" />
+                        <Image source={require('../images/icone-pix.png')} />
                         <Text style={styles.itemFooterText}>Pix</Text>
                     </View>
 
                     <View style={styles.tabItem}>
-                        <MaterialIcons name="person-add" size={24} color="#fff" />
+                        <Image source={require('../images/icone-barcode.png')} />
                         <Text style={styles.itemFooterText}>Pagar</Text>
                     </View>
 
                     <View style={styles.tabItem}>
-                        <MaterialIcons name="person-add" size={24} color="#fff" />
+                        <Image source={require('../images/icone-amigos.png')} />
                         <Text style={styles.itemFooterText}>Indicar amigos</Text>
                     </View>
 
                     <View style={styles.tabItem}>
-                        <MaterialIcons name="person-add" size={24} color="#fff" />
+                        <Image source={require('../images/icon-transferencia.png')} />
                         <Text style={styles.itemFooterText}>Transferir</Text>
-                    </View>
-
-                    <View style={styles.tabItem}>
-                        <MaterialIcons name="person-add" size={24} color="#fff" />
-                        <Text style={styles.itemFooterText}>Depositar</Text>
                     </View>
             </ScrollView>
         </View>
@@ -141,7 +136,7 @@ const styles = StyleSheet.create({
     tabItem: {
         width: 85,
         height: 85,
-        backgroundColor: 'rgba(255, 255, 255, .2)',
+        backgroundColor: '#8E31D0',
         borderRadius: 3,
         marginLeft: 10,
         padding: 10,
