@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <View style={styles.containerBackground}>
       <ImageBackground style={styles.background}
-              source={require('../images/bg-home.jpg')} />
+              source={require('../images/bg-home.png')} />
 
       <View style={styles.container}>
         <View style={styles.row}>

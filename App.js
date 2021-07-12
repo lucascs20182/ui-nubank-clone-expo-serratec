@@ -9,8 +9,8 @@ export default function App() {
   return (
     <>
       <StatusBar backgroundColor="rgba(255, 255, 255, 0)" translucent />
-      <Home />
-      {/* <HomeLogada /> */}
+      {/* <Home /> */}
+      <HomeLogada />
     </>
   );
 }
